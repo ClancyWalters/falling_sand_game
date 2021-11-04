@@ -113,48 +113,57 @@ The Stateblock inherits from the base block class and includes functionality.
 The GridBlockAPI is an object that holds a reference to the grid and holds functionality that can be accessed by block objects. This is not an interface as it expands on the functionality within the grid class itself while also limiting access. A similar object, GridHandlerAPI exists between the grid and ActionHandlers but is not pictured here.
 
 ## Composition:
-This essential design however has a key issue that became apparent during development. If two objects that inherit from different parent classes implement the same behavior, then code duplication is required. To solve this, I implemented composition for some of the most common functionality such as temperature:
+This essential design however has a key issue that became apparent during development. If two objects that inherit from different parent classes implement the same behavior, then code duplication is required. To solve this, I implemented composition for some of the most common functionality such as temperature:\
 ![alt text](./img/UML2.png)
-
 
 ## Coordinates:
 Another important aspect of design is my choice on how to handle coordinates. While handling all coordinates through inbuilt classes such as vector2 is a reasonable solution I chose to avoid this as a vector2 that represents the location on the grid would be able to be used in a method that requires a location on the window without a compiler error. Instead for my Program I decided to create 3 different coordinate structs that each represent a different type of coordinate:
-Absolute coordinates represent a pixel position on the window. 
-Grid coordinates represent a location in the 2D array stored by the grid.
-Relative coordinates represent a location relative to 0, 0.
-This flexibility of creating my own coordinate system proved essential as I transitioned away from splashkit to monogame late in the project. Without my own coordinate system many methods would have required rewrites to use a new coordinate system that did not rely on splashkit’s point2D.
-Relative coordinates also serve to significantly reduce the coupling of blocks and the grid as blocks do not know their own location. If blocks must know about blocks around them they hold relative coordinate values that can be translated to grid coordinates when ActionQuery() is called.
-I chose to create these as structs due to data in a struct being stored sequentially within the heap instead of storing pointers to data randomly in the heap. This, according to this article, can have a significant impact on performance of creating a data structure to hold x and y values. 
-Each coordinate struct also contains a method which is somewhat unorthodox. In C# methods on structs are stored as managed pointers and the CLI passes a reference of the struct to the method meaning these methods should not influence performance.
-![alt text](./img/UML3.png)
 
+Absolute coordinates represent a pixel position on the window. 
+
+Grid coordinates represent a location in the 2D array stored by the grid.
+
+Relative coordinates represent a location relative to 0, 0.
+
+This flexibility of creating my own coordinate system proved essential as I transitioned away from splashkit to monogame late in the project. Without my own coordinate system many methods would have required rewrites to use a new coordinate system that did not rely on splashkit’s point2D.
+
+Relative coordinates also serve to significantly reduce the coupling of blocks and the grid as blocks do not know their own location. If blocks must know about blocks around them they hold relative coordinate values that can be translated to grid coordinates when ActionQuery() is called.
+
+I chose to create these as structs due to data in a struct being stored sequentially within the heap instead of storing pointers to data randomly in the heap. This, according to this article, can have a significant impact on performance of creating a data structure to hold x and y values. 
+
+Each coordinate struct also contains a method which is somewhat unorthodox. In C# methods on structs are stored as managed pointers and the CLI passes a reference of the struct to the method meaning these methods should not influence performance.\
+![alt text](./img/UML3.png)
 
 ## MonoGame and SplashKit:
 This project was conceived and built in SplashKit. However, SplashKit is highly unoptimized and due to that, drawing the rectangles that represent each block cost 20% of the overall performance of the program. To solve this issue, I either needed to draw the rectangles using the GPU or multithread the drawing aspect of the program.
+
 I elected to port the project to Mono Game, a much more advanced and mature framework based on Microsoft’s no longer developed framework XNA, where I could easily take advantage of the GPU minimizing performance issues related to the drawing of the grid. I also took advantage of the UI library myra to simplify the UI creation process as it is not the focus of this project. This had the somewhat dramatic effect that Mono Game is built around the MVC pattern and hence the program needed to be altered to utilize this.
+
 The model code is included in a separate DLL and public interfaces are used wherever possible to hide the model’s functionality while all other classes are internal meaning they are not available outside the binary.
 
-An example of the publicly facing interface for the grid:
+An example of the publicly facing interface for the grid:\
 ![alt text](./img/UML4.png)
 
-
-The view and controller code are part of the Mono Game DLL:
+The view and controller code are part of the Mono Game DLL:\
 ![alt text](./img/UML5.png)
 
 
 ## Brushes and DrawingHandlers:
 One issue I faced in design was separating the controller from the model. The controller should not directly be able to make changes to the grid however, some method is required so that user can draw blocks onto the grid.
-Firstly, since ActionHandlers exist to make changes to the grid, I defined DrawingHandlers that inherit from ActionHandler as their parent class. This has similar advantages to other action handlers as it also serves to minimize code replication by defining functionality once. The Drawing Handler UML:
-![alt text](./img/UML6.png)
 
+Firstly, since ActionHandlers exist to make changes to the grid, I defined DrawingHandlers that inherit from ActionHandler as their parent class. This has similar advantages to other action handlers as it also serves to minimize code replication by defining functionality once. The Drawing Handler UML:\
+![alt text](./img/UML6.png)\
 However, DrawingHandlers require knowledge of internal components that are not exposed to the controller so a class is required that has access to the internal components for creating DrawingHandlers and is publicly accessible meaning it can be used by the controller. This class is the brush class.
-Brushes are public classes that hold a list of points, the functionality to change that list of points, and any functionality needed to create a DrawingHandler. UML for brush classes:
+
+Brushes are public classes that hold a list of points, the functionality to change that list of points, and any functionality needed to create a DrawingHandler. UML for brush classes:\
 ![alt text](./img/UML7.png)
 
 Block brushes hold a list of all blocks the user can draw and draws those to the screen.
+
 Temperature brush holds a temperature differential which is used to change the temperature of selected blocks.
 Eraser brush replaces any selected blocks with air.
-Together this creates a strong and extensible system where the controller is exposed a minimum of information, the brush handles the functionality surrounding the creation of a DrawingHandler, and the DrawingHandler performs actions on the grid. A UML showing the general structure of this process:
+
+Together this creates a strong and extensible system where the controller is exposed a minimum of information, the brush handles the functionality surrounding the creation of a DrawingHandler, and the DrawingHandler performs actions on the grid. A UML showing the general structure of this process:\
 ![alt text](./img/UML8.png)
 
 
