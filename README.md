@@ -11,5 +11,5 @@ I chose to create a game in this genre as it seems to lend itself to object orie
 
 ## Functionality:
 ### The main view:
-![alt text](relative/img/main_view.png)
+![alt text](./img/main_view.png)
 
