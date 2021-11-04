@@ -22,14 +22,13 @@ I chose to create a game in this genre as it seems to lend itself to object orie
 •	Thermal midpoint determines the temperature in the middle of the range in temperature view\
 
 ## Top left information readout:
-![alt text](./img/info.png)
-
-•	ms/t is the total time it takes to execute a tick. FPS is the number of ticks performed each second
-•	PX and PY are the pixel position of the mouse cursor
-•	GX and GY are the grid position of the mouse cursor
-•	Block returns the name of the block at the location of the mouse cursor
-•	Temp returns the temperature in kelvin of the block at the location of the mouse cursor
-•	Density returns the density of the block at the location of the mouse cursor
+![alt text](./img/info.png)\
+•	ms/t is the total time it takes to execute a tick. FPS is the number of ticks performed each second\
+•	PX and PY are the pixel position of the mouse cursor\
+•	GX and GY are the grid position of the mouse cursor\
+•	Block returns the name of the block at the location of the mouse cursor\
+•	Temp returns the temperature in kelvin of the block at the location of the mouse cursor\
+•	Density returns the density of the block at the location of the mouse cursor\
 
 ## Mouse Cursor functionality:
 If the Block brush is selected, left click will place blocks into the world and right click will erase blocks from the world.
