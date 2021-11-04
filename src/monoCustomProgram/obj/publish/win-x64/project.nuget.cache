@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "/h2XSbO4M6PgUv+sPNexh/Y0MqmaZSdnVzDRwyhDa2bPE3xQSZB0wXstsWDxOn260ypozidVEFLK+Sf+C2JlGA==",
+  "success": true,
+  "projectFilePath": "C:\\_UNI_Programming_folder\\2020_Semester_2\\COS20007_OOP\\Custom Program\\MonoCustomProgram\\MonoCustomProgram\\MonoCustomProgram.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\clanc\\.nuget\\packages\\info.lundin.math.dll\\1.2.6\\info.lundin.math.dll.1.2.6.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\monogame.extended\\3.8.0\\monogame.extended.3.8.0.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\myra\\1.0.2.211\\myra.1.0.2.211.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\xnassets\\0.5.0.6\\xnassets.0.5.0.6.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.9\\microsoft.netcore.app.runtime.win-x64.3.1.9.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.9\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.9.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.9\\microsoft.aspnetcore.app.runtime.win-x64.3.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}
