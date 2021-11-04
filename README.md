@@ -63,14 +63,14 @@ Acid is a color changing material that eats any other solid or liquid blocks wit
 
 ## Temperature Simulation
 ![alt text](./img/temperature.png)\
-My game includes a complex temperature simulation where blocks have a specific heat capacity, temperature, and thermal conductivity (a value representing how quickly temperatures should change when in contact with a block of different temperature). In the above example there are two constant temperature blocks (top is 10K bottom is 3000K) and the funnel of heat is air of different temperatures moving.
-Some more temperature interactions (from left to right):
-Ice floating on water, lava in a hot cell, lava and liquid oxygen divided by glass (an amazing insulator), and a hot and cold source sitting horizontal in a box.
+My game includes a complex temperature simulation where blocks have a specific heat capacity, temperature, and thermal conductivity (a value representing how quickly temperatures should change when in contact with a block of different temperature). In the above example there are two constant temperature blocks (top is 10K bottom is 3000K) and the funnel of heat is air of different temperatures moving.\
+Some more temperature interactions (from left to right):\
+Ice floating on water, lava in a hot cell, lava and liquid oxygen divided by glass (an amazing insulator), and a hot and cold source sitting horizontal in a box.\
 ![alt text](./img/t1.png)\
-With a lower temperature midpoint:
+With a lower temperature midpoint:\
 ![alt text](./img/t2.png)\
-Higher temperature midpoint:
-![alt text](./img/t3png)\
+Higher temperature midpoint:\
+![alt text](./img/t3.png)\
 
 ## Emergent Behaviour
 One core aspect essential to falling sand games is that the simple checks used to perform actions should create emergent complex behavior.
