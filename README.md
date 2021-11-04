@@ -11,16 +11,15 @@ I chose to create a game in this genre as it seems to lend itself to object orie
 
 ## Functionality:
 ### The main view:
-![alt text](./img/main_view.png)
-
-•	Play / Pause is used to toggle if the simulation is paused.
-•	Next view mode is used to change between temperature and normal view.
-•	Toggle brush mode is used to change between a block brush and a temperature brush
-•	Reset resets the grid
-•	Clone block toggles the block brush painting with clone blocks (that produce the selected block)
-•	Brush size determines the size of the brush
-•	Brush strength determines what portion of the block brush should paint and what temperature the temperature brush should change blocks by
-•	Thermal midpoint determines the temperature in the middle of the range in temperature view
+![alt text](./img/main_view.png)\
+•	Play / Pause is used to toggle if the simulation is paused.\
+•	Next view mode is used to change between temperature and normal view.\
+•	Toggle brush mode is used to change between a block brush and a temperature brush\
+•	Reset resets the grid\
+•	Clone block toggles the block brush painting with clone blocks (that produce the selected block)\
+•	Brush size determines the size of the brush\
+•	Brush strength determines what portion of the block brush should paint and what temperature the temperature brush should change blocks by\
+•	Thermal midpoint determines the temperature in the middle of the range in temperature view\
 
 ## Top left information readout:
 ![alt text](./img/info.png)
