@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "2.2P Drawing Program - Shapes/1.0.0": {
+        "runtime": {
+          "2.2P Drawing Program - Shapes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "2.2P Drawing Program - Shapes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

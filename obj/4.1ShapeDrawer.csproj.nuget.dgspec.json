@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\_UNI_Programming_folder\\2020_Semester_2\\COS20007_OOP\\Custom Program\\ShapeDrawing\\4.1ShapeDrawer.csproj": {}
+  },
+  "projects": {
+    "C:\\_UNI_Programming_folder\\2020_Semester_2\\COS20007_OOP\\Custom Program\\ShapeDrawing\\4.1ShapeDrawer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_UNI_Programming_folder\\2020_Semester_2\\COS20007_OOP\\Custom Program\\ShapeDrawing\\4.1ShapeDrawer.csproj",
+        "projectName": "4.1ShapeDrawer",
+        "projectPath": "C:\\_UNI_Programming_folder\\2020_Semester_2\\COS20007_OOP\\Custom Program\\ShapeDrawing\\4.1ShapeDrawer.csproj",
+        "packagesPath": "C:\\Users\\clanc\\.nuget\\packages\\",
+        "outputPath": "C:\\_UNI_Programming_folder\\2020_Semester_2\\COS20007_OOP\\Custom Program\\ShapeDrawing\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\clanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

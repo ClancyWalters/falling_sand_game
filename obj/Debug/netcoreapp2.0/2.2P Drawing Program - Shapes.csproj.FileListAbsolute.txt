@@ -1,0 +1,12 @@
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\bin\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.deps.json
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\bin\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.runtimeconfig.json
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\bin\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.runtimeconfig.dev.json
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\bin\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.dll
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\bin\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.pdb
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\obj\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.csprojAssemblyReference.cache
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\obj\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.AssemblyInfoInputs.cache
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\obj\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.AssemblyInfo.cs
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\obj\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.csproj.CoreCompileInputs.cache
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\obj\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.dll
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\obj\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.pdb
+C:\UNI_Programming_folder\2020_Semester_2\COS20007_OOP\2.2P Drawing Program - Shapes\obj\Debug\netcoreapp2.0\2.2P Drawing Program - Shapes.genruntimeconfig.cache

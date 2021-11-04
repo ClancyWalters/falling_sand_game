@@ -1,0 +1,9 @@
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\Custom Program\CustomProgram\bin\Release\netcoreapp3.1\CustomProgram.deps.json
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\Custom Program\CustomProgram\bin\Release\netcoreapp3.1\CustomProgram.dll
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\Custom Program\CustomProgram\bin\Release\netcoreapp3.1\CustomProgram.pdb
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\Custom Program\CustomProgram\obj\Release\netcoreapp3.1\CustomProgram.AssemblyInfoInputs.cache
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\Custom Program\CustomProgram\obj\Release\netcoreapp3.1\CustomProgram.AssemblyInfo.cs
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\Custom Program\CustomProgram\obj\Release\netcoreapp3.1\CustomProgram.csproj.CoreCompileInputs.cache
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\Custom Program\CustomProgram\obj\Release\netcoreapp3.1\CustomProgram.dll
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\Custom Program\CustomProgram\obj\Release\netcoreapp3.1\CustomProgram.pdb
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\Custom Program\CustomProgram\obj\Release\netcoreapp3.1\CustomProgram.csprojAssemblyReference.cache

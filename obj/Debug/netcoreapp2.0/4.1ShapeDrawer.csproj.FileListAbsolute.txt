@@ -1,0 +1,12 @@
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\obj\Debug\netcoreapp2.0\4.1ShapeDrawer.csprojAssemblyReference.cache
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\obj\Debug\netcoreapp2.0\4.1ShapeDrawer.AssemblyInfoInputs.cache
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\obj\Debug\netcoreapp2.0\4.1ShapeDrawer.AssemblyInfo.cs
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\obj\Debug\netcoreapp2.0\4.1ShapeDrawer.csproj.CoreCompileInputs.cache
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\bin\Debug\netcoreapp2.0\4.1ShapeDrawer.deps.json
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\bin\Debug\netcoreapp2.0\4.1ShapeDrawer.runtimeconfig.json
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\bin\Debug\netcoreapp2.0\4.1ShapeDrawer.runtimeconfig.dev.json
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\bin\Debug\netcoreapp2.0\4.1ShapeDrawer.dll
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\bin\Debug\netcoreapp2.0\4.1ShapeDrawer.pdb
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\obj\Debug\netcoreapp2.0\4.1ShapeDrawer.dll
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\obj\Debug\netcoreapp2.0\4.1ShapeDrawer.pdb
+C:\_UNI_Programming_folder\2020_Semester_2\COS20007_OOP\4.1P Drawing Program - Diffrent Shapes\ShapeDrawing\obj\Debug\netcoreapp2.0\4.1ShapeDrawer.genruntimeconfig.cache

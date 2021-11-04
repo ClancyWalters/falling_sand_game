@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "L42vCySsn4zT4ZT5H3nAajGMQJRfj8GDB1LyBudORdOmp84ivaRp8d1/mWs5Ka2V5SYCAriGFsywkZD9aFqseA==",
+  "success": true,
+  "projectFilePath": "C:\\_UNI_Programming_folder\\2020_Semester_2\\COS20007_OOP\\Custom Program\\CustomProgram\\CustomProgram.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\clanc\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.9\\microsoft.netcore.app.runtime.win-x64.3.1.9.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.9\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.9.nupkg.sha512",
+    "C:\\Users\\clanc\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.9\\microsoft.aspnetcore.app.runtime.win-x64.3.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}
