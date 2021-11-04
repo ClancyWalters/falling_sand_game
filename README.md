@@ -19,7 +19,7 @@ I chose to create a game in this genre as it seems to lend itself to object orie
 •	Clone block toggles the block brush painting with clone blocks (that produce the selected block)\
 •	Brush size determines the size of the brush\
 •	Brush strength determines what portion of the block brush should paint and what temperature the temperature brush should change blocks by\
-•	Thermal midpoint determines the temperature in the middle of the range in temperature view\
+•	Thermal midpoint determines the temperature in the middle of the range in temperature view
 
 ## Top left information readout:
 ![alt text](./img/info.png)\
@@ -28,92 +28,78 @@ I chose to create a game in this genre as it seems to lend itself to object orie
 •	GX and GY are the grid position of the mouse cursor\
 •	Block returns the name of the block at the location of the mouse cursor\
 •	Temp returns the temperature in kelvin of the block at the location of the mouse cursor\
-•	Density returns the density of the block at the location of the mouse cursor\
+•	Density returns the density of the block at the location of the mouse cursor
 
 ## Mouse Cursor functionality:
-If the Block brush is selected, left click will place blocks into the world and right click will erase blocks from the world.
+If the Block brush is selected, left click will place blocks into the world and right click will erase blocks from the world.\
 If the Temperature brush is selected left click will increase the temperature of blocks included in the brush’s radius and right click will do the inverse.
 
 ## Examples of block functionality:
 This is not a comprehensive list of all functionalities but provides some of the best examples.
 
 ### Dirt
-![alt text](./img/dirt.png)
-
+![alt text](./img/dirt.png)\
 Dirt is affected by gravity and turns to mud if covered by water. If it is touching water but not covered it will turn to grass which may spread to nearby dirt.
 
 ### Meteor
-![alt text](./img/meteor.png)
-
+![alt text](./img/meteor.png)\
 Meteors will fall directly downwards. If they make contact with an impassable block such as another solid block they will explode. While the fall they release smoke and fire.
 
 ### Wood
-![alt text](./img/wood.png)
-
+![alt text](./img/wood.png)\
 Wood is affected by gravity and when in contact with a burning substance catches fire. Fire only survives when in contact with oxygen and produces embers which in turn produce smoke.
 
 ### Smoke
-![alt text](./img/smoke.png)
-
+![alt text](./img/smoke.png)\
 Smoke is a light gas that is created by many substances. If cooled sufficently it will turn to ash, a light solid, or may turn to carbon dioxide.
 
 ### Seeds
-![alt text](./img/seeds.png)
-
+![alt text](./img/seeds.png)\
 The seed block has the capacity to grow a number of different plants. The Seed block can produce cellular automota to create algue when in contact with water, multiple variants on trees, and flowers of varying sizes and shapes. These plants will also turn carbon dioxide into oxygen.
 
 ### Acid
-![alt text](./img/acid.png)
-
+![alt text](./img/acid.png)\
 Acid is a color changing material that eats any other solid or liquid blocks with a small chance to create more of itself when it does so. It is flamable.
 
 ## Temperature Simulation
-![alt text](./img/temperature.png)
-
+![alt text](./img/temperature.png)\
 My game includes a complex temperature simulation where blocks have a specific heat capacity, temperature, and thermal conductivity (a value representing how quickly temperatures should change when in contact with a block of different temperature). In the above example there are two constant temperature blocks (top is 10K bottom is 3000K) and the funnel of heat is air of different temperatures moving.
 Some more temperature interactions (from left to right):
 Ice floating on water, lava in a hot cell, lava and liquid oxygen divided by glass (an amazing insulator), and a hot and cold source sitting horizontal in a box.
-![alt text](./img/t1.png)
-
+![alt text](./img/t1.png)\
 With a lower temperature midpoint:
-![alt text](./img/t2.png)
-
+![alt text](./img/t2.png)\
 Higher temperature midpoint:
-![alt text](./img/t3png)
-
+![alt text](./img/t3png)\
 
 ## Emergent Behaviour
 One core aspect essential to falling sand games is that the simple checks used to perform actions should create emergent complex behavior.
 
 ### Density determining how materials arrange themselves
 ![alt text](./img/d1.png)
-![alt text](./img/d2.png)
-
+![alt text](./img/d2.png)\
 Blocks compare density to determine if they should sink or float meaning oil (which is less dense than water) will float while stone (which is more dense than water) will sink. In the second example hydrogen gas sits at the top of the window with smoke (which is more dense) sitting below it and some carbon dioxide (same color as air) at the bottom of the window.
 
 ### Fire starved for oxygen
-![alt text](./img/fire_oxygen.png)
-
+![alt text](./img/fire_oxygen.png)\
 Fire requires oxygen to stay lit so if another gas such as nitrogen has displaced the oxygen in an area the fire will be unable to spread to that area. In the above picture the right side of the coal on the screen is covered in nitrogen.
 
 ### Convection
 ![alt text](./img/convection.png)
-![alt text](./img/convection2.png)
-
-In this case water is heated at the bottom by a hot element, turns to steam and floats to the top of the screen where it is cooled by a cool element where it transitions back to water and falls back to the hot element.
+![alt text](./img/convection2.png)\
+In this case water is heated at the bottom by a hot element, turns to steam and floats to the top of the screen where it is cooled by a cool element where it transitions back to water and falls back to the hot element.\
 In the second example a heatsink is used to remove heat that is generated by a element at the bottom of the container and transported to the top of the container via water – emulating a real world heat pipe.
 
 # Design:
 ## Fundamental Design:
-To create the fundamental aspect of a falling sand game two questions, need to be answered; How should blocks determine if they should be updated, and how should blocks be updated.
-Firstly, I chose to give blocks the ability to determine if they should be updated. This has the significant advantage that functionality is defined by the block and thus new blocks can implement unique functionality. This is an extensible design that avoids code duplication as if an action is performed on many blocks, such as gravity, those blocks may inherit from a parent class that contains that functionality.
-Secondly, I chose to not allow blocks to change or update the grid directly. If blocks could update the grid, they would need to know a significant amount of information about the grid making the blocks strongly related to the grid. Instead blocks create ActionHandlers, objects that contain the ability to update the grid in certain manners. These objects are returned to the grid where the grid can execute them effectively separating the conditions of an event from the event itself. This is a highly extensible design as if I have different conditions that result in the same action, I can define those conditions in the block classes and define the action in an ActionHandler class.
-This UML diagram represents the essential aspects of this design within my code:
-![alt text](./img/UML1.png)
-
-The grid class holds the grid of blocks and loops through all blocks each tick to update them.
-The IActable interface is used to define blocks that have functionality
-The Stateblock inherits from the base block class and includes functionality.
+To create the fundamental aspect of a falling sand game two questions, need to be answered; How should blocks determine if they should be updated, and how should blocks be updated.\
+Firstly, I chose to give blocks the ability to determine if they should be updated. This has the significant advantage that functionality is defined by the block and thus new blocks can implement unique functionality. This is an extensible design that avoids code duplication as if an action is performed on many blocks, such as gravity, those blocks may inherit from a parent class that contains that functionality.\
+Secondly, I chose to not allow blocks to change or update the grid directly. If blocks could update the grid, they would need to know a significant amount of information about the grid making the blocks strongly related to the grid. Instead blocks create ActionHandlers, objects that contain the ability to update the grid in certain manners. These objects are returned to the grid where the grid can execute them effectively separating the conditions of an event from the event itself. This is a highly extensible design as if I have different conditions that result in the same action, I can define those conditions in the block classes and define the action in an ActionHandler class.\
+This UML diagram represents the essential aspects of this design within my code:\
+![alt text](./img/UML1.png)\
+The grid class holds the grid of blocks and loops through all blocks each tick to update them.\
+The IActable interface is used to define blocks that have functionality.\
+The Stateblock inherits from the base block class and includes functionality.\
 The GridBlockAPI is an object that holds a reference to the grid and holds functionality that can be accessed by block objects. This is not an interface as it expands on the functionality within the grid class itself while also limiting access. A similar object, GridHandlerAPI exists between the grid and ActionHandlers but is not pictured here.
 
 ## Composition:
