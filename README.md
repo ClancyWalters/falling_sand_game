@@ -100,9 +100,12 @@ Secondly, I chose to not allow blocks to change or update the grid directly. If 
 
 This UML diagram represents the essential aspects of this design within my code:
 ![alt text](./img/UML1.png)\
-The grid class holds the grid of blocks and loops through all blocks each tick to update them.\
-The IActable interface is used to define blocks that have functionality.\
-The Stateblock inherits from the base block class and includes functionality.\
+The grid class holds the grid of blocks and loops through all blocks each tick to update them.
+
+The IActable interface is used to define blocks that have functionality.
+
+The Stateblock inherits from the base block class and includes functionality.
+
 The GridBlockAPI is an object that holds a reference to the grid and holds functionality that can be accessed by block objects. This is not an interface as it expands on the functionality within the grid class itself while also limiting access. A similar object, GridHandlerAPI exists between the grid and ActionHandlers but is not pictured here.
 
 ## Composition:
