@@ -68,11 +68,11 @@ My game includes a complex temperature simulation where blocks have a specific h
 
 Some more temperature interactions (from left to right):
 
-Ice floating on water, lava in a hot cell, lava and liquid oxygen divided by glass (an amazing insulator), and a hot and cold source sitting horizontal in a box.
+Ice floating on water, lava in a hot cell, lava and liquid oxygen divided by glass (an amazing insulator), and a hot and cold source sitting horizontal in a box.\
 ![alt text](./img/t1.png)\
-With a lower temperature midpoint:
+With a lower temperature midpoint:\
 ![alt text](./img/t2.png)\
-Higher temperature midpoint:
+Higher temperature midpoint:\
 ![alt text](./img/t3.png)\
 
 ## Emergent Behaviour
