@@ -169,8 +169,10 @@ Together this creates a strong and extensible system where the controller is exp
 
 ## Performance
 Fundamentally falling sand games pose a significant performance challenge. For the main version of the game I simulate 150000 blocks and 146502 of those can perform actions meaning they must read in the blocks around them, check for actions, and the actions must be executed by an action handler. To maintain 60fps this must happen in 10ms with an additional 6ms being reserved for drawing the grid. Hence a significant portion of time on this project focused on achieving reasonable performance. Some major changes that were made to achieve this goal were:
-1.	Removing the creation of dictionaries within tight loops
-2.	Minimizing the number of boxing operations performed within the loop
-3.	Cashing values such as block’s color to alleviate required computation
+
+1.	Removing the creation of dictionaries within tight loops\
+2.	Minimizing the number of boxing operations performed within the loop\
+3.	Cashing values such as block’s color to alleviate required computation\
+
 While this reaches an acceptable level of performance, a certain aspect of the fundamental design significantly limit performance. The IActable interface may serve to create extensible code however it entails a cast from Block objects to IActable objects before the ActionQuery method can be called which involves boxing the Block object and causing a significant performance issue (around 3ms). Similar performance issues are experienced when utilizing the ITemperature interface (around 4ms). These issues may be solved by creating properties that describe what features a block may or may not have at the cost of some extensibility.
 
