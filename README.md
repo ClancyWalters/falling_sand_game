@@ -1,6 +1,8 @@
 # Falling Sand Game
 My Falling sand game was created for unit COS20007 as the end of semester project (semester 2 2020). The project was made in first year and had to fit certain design criteria that limited the methods I could use to optimize the game. The project has been included as an example project for the unit.
 
+![alt text](./img/temp.gif)
+
 # Falling Sand Game  - Design Report
 ## Source code and precompiled versions:
 I encourage you to download and try the game as it is much easier to understand certain interactions when you can watch them take place. Precompiled versions can be found in [releases](/releases/latest).
